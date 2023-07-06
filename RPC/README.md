@@ -12,7 +12,7 @@ This code uses the geometry description stored in GDML files. An example file ca
     - This command will show the visualization of the geometry and tracks 
     -  `./rpc_geom_copy.gdml run.mac ` 
     - This command will not show the visualization but run the commands in the run.mac file
-- The output is stored in a file named `rpc_500GeV.csv` (or similar) which contains the undigitized positions of the particles crossing the glass_sensitive plate, time, momentum and particle id.
+- The output is stored in a file named `rpc_1GeV_nt_rpc_data_t0.csv` (or similar) which contains the undigitized positions of the particles crossing the glass_sensitive plate, time, momentum and particle id.
 - In this folder one can also find a code used to visualize the events stored in the output file.
 
 
