@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  <define>
+    <position name="Glass_sen_1inTOPpos" x="0" y="0" z="92.900604999999999" unit="cm"/>
+    <position name="Glass_sen_2inTOPpos" x="0" y="0" z="76.100605000000002" unit="cm"/>
+    <position name="Glass_sen_3inTOPpos" x="0" y="0" z="59.300604999999997" unit="cm"/>
+    <position name="Glass_sen_4inTOPpos" x="0" y="0" z="42.500604999999993" unit="cm"/>
+    <position name="Glass_sen_5inTOPpos" x="0" y="0" z="25.700604999999996" unit="cm"/>
+    <position name="Glass_sen_6inTOPpos" x="0" y="0" z="8.9006049999999988" unit="cm"/>
+    <position name="Glass_sen_7inTOPpos" x="0" y="0" z="-7.8993950000000126" unit="cm"/>
+    <position name="Glass_sen_8inTOPpos" x="0" y="0" z="-24.69939500000001" unit="cm"/>
+    <position name="Glass_sen_9inTOPpos" x="0" y="0" z="-41.499395000000007" unit="cm"/>
+    <position name="Glass_sen_10inTOPpos" x="0" y="0" z="-58.299395000000018" unit="cm"/>
+    <position name="Glass_sen_11inTOPpos" x="0" y="0" z="-75.099395000000001" unit="cm"/>
+    <position name="Glass_sen_12inTOPpos" x="0" y="0" z="-91.899395000000013" unit="cm"/>
+    <position name="GLASS_1inTOPpos" x="0" y="0" z="92.500600000000006" unit="cm"/>
+    <position name="GLASS_2inTOPpos" x="0" y="0" z="75.700599999999994" unit="cm"/>
+    <position name="GLASS_3inTOPpos" x="0" y="0" z="58.900599999999997" unit="cm"/>
+    <position name="GLASS_4inTOPpos" x="0" y="0" z="42.100599999999993" unit="cm"/>
+    <position name="GLASS_5inTOPpos" x="0" y="0" z="25.300600000000003" unit="cm"/>
+    <position name="GLASS_6inTOPpos" x="0" y="0" z="8.5006000000000057" unit="cm"/>
+    <position name="GLASS_7inTOPpos" x="0" y="0" z="-8.2994000000000057" unit="cm"/>
+    <position name="GLASS_8inTOPpos" x="0" y="0" z="-25.099400000000003" unit="cm"/>
+    <position name="GLASS_9inTOPpos" x="0" y="0" z="-41.8994" unit="cm"/>
+    <position name="GLASS_10inTOPpos" x="0" y="0" z="-58.699400000000011" unit="cm"/>
+    <position name="GLASS_11inTOPpos" x="0" y="0" z="-75.499399999999994" unit="cm"/>
+    <position name="GLASS_12inTOPpos" x="0" y="0" z="-92.299400000000006" unit="cm"/>
+    <position name="Aluminium_1inTOPpos" x="0" y="0" z="92.0505" unit="cm"/>
+    <position name="Aluminium_2inTOPpos" x="0" y="0" z="75.250500000000002" unit="cm"/>
+    <position name="Aluminium_3inTOPpos" x="0" y="0" z="58.450499999999998" unit="cm"/>
+    <position name="Aluminium_4inTOPpos" x="0" y="0" z="41.650499999999994" unit="cm"/>
+    <position name="Aluminium_5inTOPpos" x="0" y="0" z="24.850499999999997" unit="cm"/>
+    <position name="Aluminium_6inTOPpos" x="0" y="0" z="8.0504999999999995" unit="cm"/>
+    <position name="Aluminium_7inTOPpos" x="0" y="0" z="-8.7495000000000118" unit="cm"/>
+    <position name="Aluminium_8inTOPpos" x="0" y="0" z="-25.549500000000009" unit="cm"/>
+    <position name="Aluminium_9inTOPpos" x="0" y="0" z="-42.34950000000002" unit="cm"/>
+    <position name="Aluminium_10inTOPpos" x="0" y="0" z="-59.149500000000032" unit="cm"/>
+    <position name="Aluminium_11inTOPpos" x="0" y="0" z="-75.949500000000015" unit="cm"/>
+    <position name="Aluminium_12inTOPpos" x="0" y="0" z="-92.749500000000026" unit="cm"/>
+  </define>
+  <materials>
+    <material name="Air" Z="1">
+      <D unit="g/cm3" value="0.0012049999999999999"/>
+      <atom unit="g/mole" value="1"/>
+    </material>
+    <material name="Glass" Z="14">
+      <D unit="g/cm3" value="2.5"/>
+      <atom unit="g/mole" value="28.09"/>
+    </material>
+    <material name="Al" Z="13">
+      <D unit="g/cm3" value="2.7000000000000002"/>
+      <atom unit="g/mole" value="26.98"/>
+    </material>
+  </materials>
+  <solids>
+    <box name="TOP" x="100.2" y="100.2" z="186.00120999999999" lunit="cm"/>
+    <box name="Glass_sen0x1" x="100" y="100" z="1.0000000000000001e-05" lunit="cm"/>
+    <box name="GLASS0x1" x="100" y="100" z="0.59999999999999998" lunit="cm"/>
+    <box name="Aluminium0x1" x="100" y="100" z="0.29999999999999999" lunit="cm"/>
+  </solids>
+  <structure>
+    <volume name="Glass_sen">
+      <materialref ref="Glass"/>
+      <solidref ref="Glass_sen0x1"/>
+    </volume>
+    <volume name="GLASS">
+      <materialref ref="Glass"/>
+      <solidref ref="GLASS0x1"/>
+    </volume>
+    <volume name="Aluminium">
+      <materialref ref="Al"/>
+      <solidref ref="Aluminium0x1"/>
+    </volume>
+    <volume name="TOP">
+      <materialref ref="Air"/>
+      <solidref ref="TOP"/>
+      <physvol name="Glass_sen_1" copynumber="1">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_1inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_2" copynumber="2">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_2inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_3" copynumber="3">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_3inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_4" copynumber="4">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_4inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_5" copynumber="5">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_5inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_6" copynumber="6">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_6inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_7" copynumber="7">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_7inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_8" copynumber="8">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_8inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_9" copynumber="9">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_9inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_10" copynumber="10">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_10inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_11" copynumber="11">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_11inTOPpos"/>
+      </physvol>
+      <physvol name="Glass_sen_12" copynumber="12">
+        <volumeref ref="Glass_sen"/>
+        <positionref ref="Glass_sen_12inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_1" copynumber="1">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_1inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_2" copynumber="2">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_2inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_3" copynumber="3">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_3inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_4" copynumber="4">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_4inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_5" copynumber="5">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_5inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_6" copynumber="6">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_6inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_7" copynumber="7">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_7inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_8" copynumber="8">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_8inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_9" copynumber="9">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_9inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_10" copynumber="10">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_10inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_11" copynumber="11">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_11inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_12" copynumber="12">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_12inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_1" copynumber="1">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_1inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_2" copynumber="2">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_2inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_3" copynumber="3">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_3inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_4" copynumber="4">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_4inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_5" copynumber="5">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_5inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_6" copynumber="6">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_6inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_7" copynumber="7">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_7inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_8" copynumber="8">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_8inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_9" copynumber="9">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_9inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_10" copynumber="10">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_10inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_11" copynumber="11">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_11inTOPpos"/>
+      </physvol>
+      <physvol name="Aluminium_12" copynumber="12">
+        <volumeref ref="Aluminium"/>
+        <positionref ref="Aluminium_12inTOPpos"/>
+      </physvol>
+    </volume>
+  </structure>
+  <setup name="default" version="1.0">
+    <world ref="TOP"/>
+  </setup>
+</gdml>
